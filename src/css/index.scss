@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    background-color: white;
+    color           : #686868;
+    font-family     : "Roboto";
+    font-size       : 1rem;
+    font-weight     : normal;
+    margin          : 0;
+    padding         : 25px;
+    line-height     : 1.5;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 50px;
+}
+
+header {
+    color: white;
+    position  : relative;
+    background: url("https://image.ibb.co/jBXfxA/bg-contact.jpg") no-repeat center center/cover;
+    padding   : 15% 0 0 0;
+    min-height: 600px;
+    .mainTitle {
+        font-size: 1.5rem;
+    }
+
+    .subTitle {
+        font-size: 3rem;
+        position : relative;
+    }
+
+    .lowTitle {
+        padding: 40px;
+    }
+}
+
+.menu {
+    color: #686868;
+    background: #FFFFFF;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: 20px;
+    border-bottom: 2px solid rgb(65, 61, 61);
+}
+
+.navMenu {
+    display: block;
+    float: right;
+    li {
+        display: inline-block;
+        margin-left: 40px;
+        &:hover {
+            color: rgb(206, 58, 58);
+        }
+    }
+}
+
+.title {
+    font-size: 1.6rem;
+    padding: 0 0 20px 0;
+}
+
+.text {
+    max-width: 60vw;
+    margin: 0 auto;
+}
+
+.elements {
+    display: grid;
+    grid-template-columns: [col1-start] 1fr [col2-start] 1fr [col3-start] 1fr [col3-end];
+    grid-template-rows: [row1-start] auto [row2-start] auto [row3-start] auto [row3-end];
+    grid-gap: 20px;
+}
+
+.figure1 {
+    grid-column: col1-start / col3-start;
+    grid-row: row1-start;
+}
+
+.figure2 {
+    grid-column: col1-start / col2-start;
+    grid-row: row2-start;
+}
+
+.figure3 {
+    grid-column: col2-start / col3-start;
+    grid-row: row2-start;
+}
+
+.figure4 {
+    grid-column: col3-start;
+    grid-row: row1-start / row3-start;
+}
+
+.figure5 {
+    grid-column: col1-start / col3-start;
+    grid-row: row3-start;
+}
+
+.figure6 {
+    grid-column: col3-start / col3-end;
+    grid-row: row3-start;
+}
+
+.video {
+    width: 1200px;
+    height: 500px;
+}
+
+.form {
+    position: relative;
+}
+
+.form:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(https://image.ibb.co/h9qYHA/bg-video.png) no-repeat center center;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+textarea {
+    resize: none;
+}
+
+.forma {
+    margin: 20px auto;
+    width: 100%;
+    max-width: 550px;
+    input, textarea {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        border: 2px solid rgb(160, 41, 41);
+        margin-bottom: 20px;
+    }
+    p {
+        display: block;
+        float: left;
+        font-size: 0.8rem;
+    }
+    button {
+        float: right;
+        padding: 10px 30px;
+        cursor: pointer;
+        background-color: rgb(160, 41, 41);
+        border: none;
+        color: white;
+    }
+}
