@@ -1,5 +1,5 @@
 # Project_website
-My first project created with the use of Webpack
+My first project created with the use of Webpack.
 ## Getting started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 ### Installing
