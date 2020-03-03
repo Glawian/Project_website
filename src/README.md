@@ -7,7 +7,7 @@ Every dependency is declared in package.json file. Run one command in project fo
 ```
 npm install
 ```
-Next build project:
+Next build the project:
 ```
 npm run build:dev
 ```
