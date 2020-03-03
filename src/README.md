@@ -14,3 +14,5 @@ npm run build:dev
 To run live server use command:
 ```
 npm run start:dev
+```
+Every script is defined in package.json file.
